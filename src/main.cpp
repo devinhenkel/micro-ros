@@ -7,9 +7,12 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(LED, HIGH);// turn the LED off.(Note that LOW is the voltage level but actually 
-                          //the LED is on; this is because it is acive low on the ESP8266.
-  delay(200);            // wait for 1 second.
-  digitalWrite(LED, LOW); // turn the LED on.
-  delay(1000); // wait for 1 second.
+  digitalWrite(LED, HIGH);
+  delay(200);            
+  digitalWrite(LED, LOW); 
+  delay(100); 
+  digitalWrite(LED, HIGH);
+  delay(200);           
+  digitalWrite(LED, LOW); 
+  delay(1000); 
 }
